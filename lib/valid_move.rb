@@ -5,11 +5,15 @@ board = [" "," "," "," "," "," "," "," "," "]
 # define valid_move? - checks and returns true if move is valid
 def valid_move?(board,index)
   #accepts a board and index
-  index.between?(0,8)
+  if index.between?(0,8)
   #present on the game board
+  ##if position_taken? is true
+    if position_taken? != true
+    end
+  end
 end
 
-  #not already filled
+#not already filled
 
 #use position_taken? as a helper method
 def position_taken?(board,index)
