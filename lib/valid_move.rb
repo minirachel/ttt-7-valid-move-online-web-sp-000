@@ -1,4 +1,19 @@
-# code your #valid_move? method here
+board = [" "," "," "," "," "," "," "," "," "]
 
+  ###  if position_taken?(board,index != "X" || "O")
 
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+# define valid_move? - checks and returns true if move is valid
+def valid_move?(board,index)
+  #accepts a board and index
+  index.between?(0,8)
+  #present on the game board
+end
+
+  #not already filled
+
+#use position_taken? as a helper method
+def position_taken?(board,index)
+  board[index] == "X" || board[index] == "O"
+end
+  #explore using two if statements or &&
+  # "a false or nil return value for an invalid move will suffice"
